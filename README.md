@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 6.03.24
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: KAVIYA.S
+###  ROLL NO : 212223040090
+###  DEPARTMENT: CSE
 
 
 # EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR
@@ -119,12 +119,74 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 
 ## STM 32 CUBE PROGRAM :
 
+#include "stdio.h"
+
+#if defined (ICCARM) || defined ARMCC_VERSION)
+
+#define PUTCHAR_PROTOTPYE int fputc(int ch, FILE *f)
+
+#elif defined(GNUC)
+
+#define PUTCHAR_PROTOTPYE int_io_putchar(int ch)
+
+#endif
+
+while(1)
+
+{
+
+void HAL_GOPI_EXIT_Callback(uint16_t GPIO_Pin)
+
+}
+
+{
+
+if(HAL_GPIO_ReadPin(GPIOB_GPIO_PIN_4)==1)
+
+{
+
+printf("An interrupt has occured");
+
+}
+
+else
+
+{
+
+}
+
+}
+
+PUTCAHR_PROTOTYPE
+
+{
+
+HAL_UART_Transmit(&huart2, (unit8_t*)&ch, 1, 0xFFFF);
+
+return ch; 
+
+}
+
+
 
 
 ## Output screen shots of serial port utility   :
+
+![iotttt](https://github.com/KAVIYASHANMUGAM19/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/155141139/4301b5df-1b72-4895-a4ed-f4f1b15acc57)
+
  
  
  ## Circuit board :
+
+ WITH OBSTACLE IMAGE
+
+ ![Screenshot 2024-02-23 091938](https://github.com/KAVIYASHANMUGAM19/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/155141139/570da192-3b8b-41bb-ac40-280c299a5a30)
+
+
+WITHOUT OBSTACLE IMAGE
+
+![Screenshot 2024-02-23 092025](https://github.com/KAVIYASHANMUGAM19/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/155141139/d0654b25-abd5-459c-bc09-b7abd80fba10)
+
  
  
  
